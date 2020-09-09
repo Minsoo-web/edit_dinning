@@ -1,3 +1,5 @@
+def buildNumber = Jenkins.instance.getItem('minsoo-test').lastSuccessfulBuild.number
+
 pipeline {
     agent any
 
@@ -11,6 +13,7 @@ pipeline {
                 sh"""
                 ls
                 pwd
+                echo ${buildNumber}
                 """    
             }            
         }        
