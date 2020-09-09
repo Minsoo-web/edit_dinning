@@ -8,7 +8,10 @@ pipeline {
     stages {
         stage('TEST') {
             steps {
-                echo "hi"    
+                sh"""
+                ls
+                pwd
+                """    
             }            
         }        
     }
