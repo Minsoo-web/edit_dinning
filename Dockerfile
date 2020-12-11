@@ -8,8 +8,10 @@ RUN npm run build
 # production stage
 FROM nginx:stable-alpine as production-stage
 
-RUN apt -y update && \
-    apt -y upgrade
+USER root
+
+RUN sudo apt -y update && \
+    sudo apt -y upgrade
 
 RUN curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
 RUN sudo apt install -y nodejs
