@@ -8,6 +8,12 @@ RUN npm run build
 # production stage
 FROM nginx:stable-alpine as production-stage
 
+RUN apt -y update && \
+    apt -y upgrade
+
+RUN curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+RUN sudo apt install -y nodejs
+
 COPY  ./nginx.conf /etc/nginx/conf.d/default.conf
 
 COPY --from=build-stage /app/dist /usr/share/nginx/html
