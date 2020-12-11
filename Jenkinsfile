@@ -10,17 +10,17 @@ pipeline {
             steps{
                 sh '''
                 if test ! -z "$(docker ps -af name=front | grep -w front$)"; then
-                    docker stop front && docker rm front >> temp.txt
+                    docker stop front && docker rm front
                 fi
-                docker build -t front-app . >> temp.txt
-                docker rmi $(docker images --filter "dangling=true" -q --no-trunc) >> temp.txt
+                docker build -t front-app .
+                docker rmi $(docker images --filter "dangling=true" -q --no-trunc)
                 '''
             }
         }
         stage('RUN CONTAINER'){
             steps{
                 sh'''
-                docker run -itd --name front -p 8080:8080 front-app:latest >> temp.txt
+                docker run -itd --name front -p 8080:8080 front-app:latest
                 '''
             }
         }
