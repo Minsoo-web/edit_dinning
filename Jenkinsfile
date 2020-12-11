@@ -24,13 +24,5 @@ pipeline {
                 '''
             }
         }
-        stage('RUN UNITTEST'){
-            steps{
-                sh '''
-                docker exec -t front npm run test:unit >> temp.txt
-                docker exec -t front npm run coverage >> temp.txt
-                '''
-            }
-        }
     }
 }
