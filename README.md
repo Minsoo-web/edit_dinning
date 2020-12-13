@@ -1,4 +1,4 @@
-# edit-dinning
+# edit-dining
 
 ## Project setup
 ```
