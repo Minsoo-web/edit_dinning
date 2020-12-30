@@ -1,6 +1,5 @@
 function solution(board, moves) {
   let answer = 0;
-
   let stack = [];
 
   for (let x of moves) {
