@@ -19,5 +19,5 @@
 
 ## 🗂 목차
 
-- 난이도 별 문제 풀이 (Programmers)
+- 난이도 별 문제 풀이 (Programmers) [리스트 보러가기](https://github.com/Minsoo-web/js_algorithm/issues)
 - 알고리즘 이론
