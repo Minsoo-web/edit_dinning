@@ -14,8 +14,9 @@
 
 ### 주요 개념
 
+- 해시
 - 반복문
-- [filter()](https://github.com/Minsoo-web/es_features/tree/master/es5#arrayfilter)
+- [filter()](https://github.com/Minsoo-web/es_features/tree/master/es5)
 - [Object.values()](https://github.com/Minsoo-web/es_features/tree/master/es2017#objectvalues)
 
 ### 제한 사항
