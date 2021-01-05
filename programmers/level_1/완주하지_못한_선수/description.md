@@ -14,7 +14,7 @@
 
 ### 주요 개념
 
-- 해시
+- [해시](https://github.com/Minsoo-web/js_algorithm/blob/master/theory/Hash.md)
 - 반복문
 - [filter()](https://github.com/Minsoo-web/es_features/tree/master/es5)
 - [Object.values()](https://github.com/Minsoo-web/es_features/tree/master/es2017#objectvalues)
